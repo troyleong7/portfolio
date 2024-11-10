@@ -6,9 +6,6 @@ export default function Home() {
       <header className="row-start-1 flex gap-8 flex-wrap items-center justify-center bg-black p-1 rounded-3xl border-gray-700 border-2">
         <a
           className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600 "
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <Image
             aria-hidden
@@ -19,12 +16,9 @@ export default function Home() {
           />
           Home
         </a>
-        
         <a
           className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/about"
         >
           <Image
             aria-hidden
@@ -33,15 +27,11 @@ export default function Home() {
             width={16}
             height={16}
           />
-
           About Me
         </a>
-
         <a
           className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
           href=""
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <Image
             aria-hidden
@@ -52,22 +42,20 @@ export default function Home() {
           />
           Projects
         </a>
-
       </header>
 
-      <main className="flex gap-8 row-start-2 items-center">
-      <div className="flex gap-5 flex-col ">
-        <a className="text-xl font-light font-[family-name:var(--font-geist-mono)]">
-          Welcome! My name is 
-        </a>
-        <a className="text-5xl font-light font-[family-name:var(--font-geist-mono)]">
-          Yun Keng (Troy) Leong
-        </a>
-        <a className="text-2xl font-light font-[family-name:var(--font-geist-mono)]">
-          I am a Software/App/Web Developer!
-        </a>
+    <main className="flex gap-8 row-start-2 items-center">
+        <div className="flex gap-5 flex-col ">
+          <a className="text-xl font-light font-[family-name:var(--font-geist-mono)]">
+            Welcome! My name is 
+          </a>
+          <a className="text-5xl font-light font-[family-name:var(--font-geist-mono)]">
+            Yun Keng (Troy) Leong
+          </a>
+          <a className="text-2xl font-light font-[family-name:var(--font-geist-mono)]">
+            I am a Software/App/Web Developer!
+          </a>
         </div>
-
         <div className="w-64 h-64 rounded-full overflow-hidden border-gray-600 border-2">
           <Image
             className="object-fill scale-150"
