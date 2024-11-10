@@ -1,13 +1,12 @@
 import Image from "next/image";
+import Link from "next/link"; 
 
 export default function About() {
     return (
       <div className="grid grid-rows-[20px_0.3fr] items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <header className="row-start-1 flex gap-8 flex-wrap items-center justify-center bg-black p-1 rounded-3xl border-gray-700 border-2 max-w-screen-lg mx-auto">
-          <a
-            className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
-            href="/"
-          >
+          <Link className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
+          href="/">
             <Image
               aria-hidden
               src="/home.svg"
@@ -16,11 +15,8 @@ export default function About() {
               height={16}
             />
             Home
-          </a>
-          
-          <a
-            className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600 "
-          >
+          </Link>
+          <a className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600 ">
             <Image
               aria-hidden
               src="/user.svg"
@@ -28,7 +24,6 @@ export default function About() {
               width={16}
               height={16}
             />
-  
             About Me
           </a>
   

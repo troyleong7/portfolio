@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           />
           Home
         </a>
-        <a
+        <Link
           className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
           href="/about"
         >
@@ -28,7 +29,7 @@ export default function Home() {
             height={16}
           />
           About Me
-        </a>
+        </Link>
         <a
           className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
           href=""
