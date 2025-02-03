@@ -92,20 +92,56 @@ export default function About() {
               : linkedin.com/in/yun-keng-leong/
             </a>
           </div>
-          <div className="flex-1 ml-8 h-[650px] overflow-y-scroll no-scrollbar" >
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
-              <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida arcu id lacus hendrerit, ut vulputate lorem volutpat. Aenean sit amet euismod leo. Sed auctor purus in purus varius, nec viverra lorem interdum.</p>
+          <div className="flex-1 ml-8 h-[650px] overflow-y-scroll no-scrollbar flex flex-col gap-y-4" >
+            <p className="text-4xl  font-bold">Introduction</p>
+            <p className="text-xl">Hi, I'm Troy, a passionate software developer with expertise in creating intuitive and scalable applications. I thrive on problem-solving, continuous learning, and building technology solutions that make an impact.</p>
+            <p className="text-4xl font-bold mt-10">Education</p>
+            <div className="flex justify-between">
+              <p className="text-xl">Master of Information Technology - Computing</p>
+              <p className="text-xl">Jul 2023- Dec 2024</p>
+            </div>
+            <div className="flex justify-between">
+              <p className="text-xl">Bachelor of Science - Computing and Software Systems</p>
+              <p className="text-xl">Feb 2020- Jul 2023</p>
+            </div>
+            <p className="text-4xl font-bold mt-10">Work Experiences</p>
+            <div className="flex justify-between">
+              <p className="text-xl font-bold">App Developer Intern at Regeneration Projects</p>
+              <p className="text-xl font-bold">Jul 2024 - Oct 2024</p>
+            </div>
+            <div className="flex justify-between">
+              <p className="text-xl font-bold"> Junior Software Developer & UI Design Intern at AAkonsult</p>
+              <p className="text-xl font-bold">Nov 2023- Feb 2024</p>
+            </div>
+            <div className="flex justify-between">
+              <p className="text-xl font-bold">Data Division Intern at Bank of China</p>
+              <p className="text-xl font-bold">Jan 2022- Feb 2022</p>
+            </div>
+            <p className="text-4xl font-bold mt-10">Certification & Skills</p>
+            <p className="text-xl font-bold">Certification</p>
+            <ul className="list-disc ml-8">
+              <li className="text-xl">AWS Certified Cloud Practitioner</li>
+            </ul>
+            <p className="text-xl font-bold">Programming Languages</p>
+            <ul className="list-disc ml-8">
+              <li className="text-xl">Python</li>
+              <li className="text-xl">C</li>
+              <li className="text-xl">C Sharp</li>
+              <li className="text-xl">Java</li>
+              <li className="text-xl">JavaScript</li>
+              <li className="text-xl">TypeScript</li>
+              <li className="text-xl">Dart</li>
+              <li className="text-xl">HTML/CSS</li>
+              <li className="text-xl">SQL</li>
+              <li className="text-xl">R</li>
+            </ul>
+            <p className="text-xl font-bold">Communication Languages</p>
+            <ul className="list-disc ml-8">
+            <li className="text-xl">English</li>
+              <li className="text-xl">Mandarin</li>
+              <li className="text-xl">Malay</li>
+              <li className="text-xl">Cantonese</li>
+            </ul>
           </div>
         </main>
       </div>
