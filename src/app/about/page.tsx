@@ -94,7 +94,7 @@ export default function About() {
           </div>
           <div className="flex-1 ml-8 h-[650px] overflow-y-scroll no-scrollbar flex flex-col gap-y-4" >
             <p className="text-4xl  font-bold">Introduction</p>
-            <p className="text-xl">Hi, I'm Troy, a passionate software developer with expertise in creating intuitive and scalable applications. I thrive on problem-solving, continuous learning, and building technology solutions that make an impact.</p>
+            <p className="text-xl">Hi, I am Troy, a passionate software developer with expertise in creating intuitive and scalable applications. I thrive on problem-solving, continuous learning, and building technology solutions that make an impact.</p>
             <p className="text-4xl font-bold mt-10">Education</p>
             <div className="flex justify-between">
               <p className="text-xl">Master of Information Technology - Computing</p>
