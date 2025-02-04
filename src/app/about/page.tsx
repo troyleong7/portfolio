@@ -27,9 +27,9 @@ export default function About() {
             About Me
           </a>
   
-          <a
+          <Link
             className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
-            href=""
+            href="/projects"
           >
             <Image
               aria-hidden
@@ -38,8 +38,8 @@ export default function About() {
               width={16}
               height={16}
             />
-            Projects
-          </a>
+          Projects
+        </Link>
   
         </header>
   
@@ -106,24 +106,44 @@ export default function About() {
             </div>
             <p className="text-4xl font-bold mt-10">Work Experiences</p>
             <div className="flex justify-between">
-              <p className="text-xl font-bold">App Developer Intern at Regeneration Projects</p>
-              <p className="text-xl font-bold">Jul 2024 - Oct 2024</p>
+              <p className="text-xl ">App Developer Intern at Regeneration Projects</p>
+              <p className="text-xl ">Jul 2024 - Oct 2024</p>
             </div>
+            <ul className="list-disc ml-8">
+              <li className="text-xl">Led as Scrum Master for development of Two Bays mobile application, responsible for managing all frontend development</li>
+              <li className="text-xl">Facilitated agile ceremonies and coordinated cross-functional teams to track progress and maintain timely delivery of features</li>
+              <li className="text-xl">Developed responsive, user-friendly interfaces in Flutter by translating UI/UX design mockups into interactive components</li>
+              <li className="text-xl">Integrated Dart pages for seamless navigation, optimising performance through code refactoring to ensure smooth transitions</li>
+              <li className="text-xl">Executed rigorous testing and debugging on multiple devices to ensure cross-platform compatibility</li>
+            </ul>
             <div className="flex justify-between">
-              <p className="text-xl font-bold"> Junior Software Developer & UI Design Intern at AAkonsult</p>
-              <p className="text-xl font-bold">Nov 2023- Feb 2024</p>
+              <p className="text-xl "> Junior Software Developer & UI Design Intern at AAkonsult</p>
+              <p className="text-xl ">Nov 2023- Feb 2024</p>
             </div>
+            <ul className="list-disc ml-8">
+              <li className="text-xl">Led a team of interns to create 3 presentations on the company&apos; web application, highlighting its functionality and competitor analysis, utilised in live client demonstrations</li>
+              <li className="text-xl">Implemented visually appealing email body templates using HTML and CSS, tailored to align with clients&apos;  branding</li>
+              <li className="text-xl">Conducted comprehensive testing of constructed application, identifying and recommending 2 solutions for improvements</li>
+              <li className="text-xl">Collaborated with senior developers on evaluating 8 clients&apos;  technical enquiries and proposing practical solutions to head developer</li>
+              <li className="text-xl">Partnered with Marketing department to enhance client&apos;s knowledge by updating 10 knowledge base articles</li>
+            </ul>
             <div className="flex justify-between">
-              <p className="text-xl font-bold">Data Division Intern at Bank of China</p>
-              <p className="text-xl font-bold">Jan 2022- Feb 2022</p>
+              <p className="text-xl ">Data Division Intern at Bank of China</p>
+              <p className="text-xl ">Jan 2022- Feb 2022</p>
             </div>
+            <ul className="list-disc ml-8">
+              <li className="text-xl">Suggested a new initiative in data collection from partnering company and execute preprocessing on Oracle</li>
+              <li className="text-xl">Executed Python code to perform key values extraction from documents, plotting graphs and tables to present results for clients</li>
+              <li className="text-xl">Coordinated with the team to analyse the company&apos;s monthly datasets, identifying trends for marketing and sales strategic decisions using Power BI</li>
+              <li className="text-xl">Managed and compiled customers&apos; data using a Microsoft SQL Server </li>
+            </ul>
             <p className="text-4xl font-bold mt-10">Certification & Skills</p>
             <p className="text-xl font-bold">Certification</p>
             <ul className="list-disc ml-8">
               <li className="text-xl">AWS Certified Cloud Practitioner</li>
             </ul>
             <p className="text-xl font-bold">Programming Languages</p>
-            <ul className="list-disc ml-8">
+            <ul className="list-disc ml-8 columns-2">
               <li className="text-xl">Python</li>
               <li className="text-xl">C</li>
               <li className="text-xl">C Sharp</li>

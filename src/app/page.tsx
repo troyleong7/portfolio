@@ -30,9 +30,9 @@ export default function Home() {
           />
           About Me
         </Link>
-        <a
+        <Link
           className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
-          href=""
+          href="/projects"
         >
           <Image
             aria-hidden
@@ -42,7 +42,7 @@ export default function Home() {
             height={16}
           />
           Projects
-        </a>
+        </Link>
       </header>
 
     <main className="flex gap-8 row-start-2 items-center">
