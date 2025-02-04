@@ -92,9 +92,10 @@ export default function About() {
               : linkedin.com/in/yun-keng-leong/
             </a>
           </div>
-          <div className="flex-1 ml-8 h-[650px] overflow-y-scroll no-scrollbar flex flex-col gap-y-4" >
-            <p className="text-4xl  font-bold">Introduction</p>
+          <div className="flex-1 ml-8 h-[650px] overflow-y-scroll no-scrollbar flex flex-col gap-y-4 font-[family-name:var(--font-geist-mono)]" >
+            <p className="text-4xl  font-bold ">Introduction</p>
             <p className="text-xl">Hi, I am Troy, a passionate software developer with expertise in creating intuitive and scalable applications. I thrive on problem-solving, continuous learning, and building technology solutions that make an impact.</p>
+            
             <p className="text-4xl font-bold mt-10">Education</p>
             <div className="flex justify-between">
               <p className="text-xl">Master of Information Technology - Computing</p>
@@ -104,6 +105,7 @@ export default function About() {
               <p className="text-xl">Bachelor of Science - Computing and Software Systems</p>
               <p className="text-xl">Feb 2020- Jul 2023</p>
             </div>
+            
             <p className="text-4xl font-bold mt-10">Work Experiences</p>
             <div className="flex justify-between">
               <p className="text-xl ">App Developer Intern at Regeneration Projects</p>
@@ -116,7 +118,7 @@ export default function About() {
               <li className="text-xl">Integrated Dart pages for seamless navigation, optimising performance through code refactoring to ensure smooth transitions</li>
               <li className="text-xl">Executed rigorous testing and debugging on multiple devices to ensure cross-platform compatibility</li>
             </ul>
-            <div className="flex justify-between">
+            <div className="flex justify-between mt-5">
               <p className="text-xl "> Junior Software Developer & UI Design Intern at AAkonsult</p>
               <p className="text-xl ">Nov 2023- Feb 2024</p>
             </div>
@@ -127,7 +129,7 @@ export default function About() {
               <li className="text-xl">Collaborated with senior developers on evaluating 8 clients&apos;  technical enquiries and proposing practical solutions to head developer</li>
               <li className="text-xl">Partnered with Marketing department to enhance client&apos;s knowledge by updating 10 knowledge base articles</li>
             </ul>
-            <div className="flex justify-between">
+            <div className="flex justify-between mt-5">
               <p className="text-xl ">Data Division Intern at Bank of China</p>
               <p className="text-xl ">Jan 2022- Feb 2022</p>
             </div>
