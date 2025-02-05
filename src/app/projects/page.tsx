@@ -8,7 +8,6 @@ export default function Projects() {
           <Link className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
           href="/">
             <Image
-              aria-hidden
               src="/home.svg"
               alt="Home icon"
               width={16}
@@ -19,7 +18,6 @@ export default function Projects() {
           <Link className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
           href="/about">
             <Image
-              aria-hidden
               src="/user.svg"
               alt="User icon"
               width={16}
@@ -30,7 +28,6 @@ export default function Projects() {
   
           <a className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600 ">
             <Image
-              aria-hidden
               src="/file.svg"
               alt="File icon"
               width={16}
@@ -61,7 +58,6 @@ export default function Projects() {
             </a>
             <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
-              aria-hidden
               src="/phone.svg"
               alt="Phone icon"
               width={20}
@@ -70,8 +66,7 @@ export default function Projects() {
               : +(61) 426 070 118
             </a>
             <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
-              <Image
-              aria-hidden
+              <Image    
               src="/mail.svg"
               alt="Mail icon"
               width={20}
@@ -81,7 +76,6 @@ export default function Projects() {
             </a>
             <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
-              aria-hidden
               src="/linkedin.svg"
               alt="LinkedIn icon"
               width={20}

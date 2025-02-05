@@ -1,14 +1,23 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link"; 
+import { useState } from "react";
 
 export default function About() {
+
+  const [openDropdown, setOpenDropdown] = useState("");
+
+  const toggleDropdown = (identifier: string) => {
+    setOpenDropdown((prev) => (prev === identifier ? "" : identifier));
+  };
+
+
     return (
       <div className="grid grid-rows-[20px_0.3fr] items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <header className="row-start-1 flex gap-8 flex-wrap items-center justify-center bg-black p-1 rounded-3xl border-gray-700 border-2 max-w-screen-lg mx-auto">
           <Link className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
           href="/">
             <Image
-              aria-hidden
               src="/home.svg"
               alt="Home icon"
               width={16}
@@ -18,7 +27,6 @@ export default function About() {
           </Link>
           <a className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600 ">
             <Image
-              aria-hidden
               src="/user.svg"
               alt="User icon"
               width={16}
@@ -32,7 +40,6 @@ export default function About() {
             href="/projects"
           >
             <Image
-              aria-hidden
               src="/file.svg"
               alt="File icon"
               width={16}
@@ -63,7 +70,6 @@ export default function About() {
             </a>
             <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
-              aria-hidden
               src="/phone.svg"
               alt="Phone icon"
               width={20}
@@ -73,7 +79,6 @@ export default function About() {
             </a>
             <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
-              aria-hidden
               src="/mail.svg"
               alt="Mail icon"
               width={20}
@@ -83,7 +88,6 @@ export default function About() {
             </a>
             <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
-              aria-hidden
               src="/linkedin.svg"
               alt="LinkedIn icon"
               width={20}
@@ -107,10 +111,12 @@ export default function About() {
             </div>
             
             <p className="text-4xl font-bold mt-10">Work Experiences</p>
+            <p className="text-xl italic opacity-75">Click on them for more details</p>
             <div className="flex justify-between">
-              <p className="text-xl ">App Developer Intern at Regeneration Projects</p>
+              <p className="text-xl cursor-pointer" onClick={() => toggleDropdown("regeneration")}>App Developer Intern at Regeneration Projects</p>
               <p className="text-xl ">Jul 2024 - Oct 2024</p>
             </div>
+            {openDropdown === "regeneration" && (
             <ul className="list-disc ml-8">
               <li className="text-xl">Led as Scrum Master for development of Two Bays mobile application, responsible for managing all frontend development</li>
               <li className="text-xl">Facilitated agile ceremonies and coordinated cross-functional teams to track progress and maintain timely delivery of features</li>
@@ -118,10 +124,12 @@ export default function About() {
               <li className="text-xl">Integrated Dart pages for seamless navigation, optimising performance through code refactoring to ensure smooth transitions</li>
               <li className="text-xl">Executed rigorous testing and debugging on multiple devices to ensure cross-platform compatibility</li>
             </ul>
+              )}
             <div className="flex justify-between mt-5">
-              <p className="text-xl "> Junior Software Developer & UI Design Intern at AAkonsult</p>
+              <p className="text-xl cursor-pointer" onClick={() => toggleDropdown("aakonsult")}> Junior Software Developer & UI Design Intern at AAkonsult</p>
               <p className="text-xl ">Nov 2023- Feb 2024</p>
             </div>
+            {openDropdown === "aakonsult" && (
             <ul className="list-disc ml-8">
               <li className="text-xl">Led a team of interns to create 3 presentations on the company&apos; web application, highlighting its functionality and competitor analysis, utilised in live client demonstrations</li>
               <li className="text-xl">Implemented visually appealing email body templates using HTML and CSS, tailored to align with clients&apos;  branding</li>
@@ -129,16 +137,19 @@ export default function About() {
               <li className="text-xl">Collaborated with senior developers on evaluating 8 clients&apos;  technical enquiries and proposing practical solutions to head developer</li>
               <li className="text-xl">Partnered with Marketing department to enhance client&apos;s knowledge by updating 10 knowledge base articles</li>
             </ul>
+            )}
             <div className="flex justify-between mt-5">
-              <p className="text-xl ">Data Division Intern at Bank of China</p>
+              <p className="text-xl cursor-pointer" onClick={() => toggleDropdown("bankofchina")}>Data Division Intern at Bank of China</p>
               <p className="text-xl ">Jan 2022- Feb 2022</p>
             </div>
+            {openDropdown === "bankofchina" && (
             <ul className="list-disc ml-8">
               <li className="text-xl">Suggested a new initiative in data collection from partnering company and execute preprocessing on Oracle</li>
               <li className="text-xl">Executed Python code to perform key values extraction from documents, plotting graphs and tables to present results for clients</li>
               <li className="text-xl">Coordinated with the team to analyse the company&apos;s monthly datasets, identifying trends for marketing and sales strategic decisions using Power BI</li>
               <li className="text-xl">Managed and compiled customers&apos; data using a Microsoft SQL Server </li>
             </ul>
+            )}
             <p className="text-4xl font-bold mt-10">Certification & Skills</p>
             <p className="text-xl font-bold">Certification</p>
             <ul className="list-disc ml-8">

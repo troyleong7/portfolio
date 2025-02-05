@@ -9,7 +9,6 @@ export default function Home() {
           className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600 "
         >
           <Image
-            aria-hidden
             src="/home.svg"
             alt="Home icon"
             width={16}
@@ -22,7 +21,6 @@ export default function Home() {
           href="/about"
         >
           <Image
-            aria-hidden
             src="/user.svg"
             alt="User icon"
             width={16}
@@ -35,7 +33,6 @@ export default function Home() {
           href="/projects"
         >
           <Image
-            aria-hidden
             src="/file.svg"
             alt="File icon"
             width={16}
