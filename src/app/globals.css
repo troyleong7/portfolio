@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +13,25 @@
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
 }
+}
+
+/* Custom scrollbar for Chrome, Edge, Safari */
+.my-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.my-scrollbar::-webkit-scrollbar-track {
+  background: #000; /* Dark track */
+}
+
+.my-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #333; /* Black thumb */
+  border-radius: 4px;
+}
+
+/* Remove the top and bottom arrow buttons */
+.my-scrollbar::-webkit-scrollbar-button {
+  display: none;
 }
 
 

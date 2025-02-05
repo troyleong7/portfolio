@@ -84,7 +84,7 @@ export default function Projects() {
               : linkedin.com/in/yun-keng-leong/
             </a>
           </div>
-          <div className="flex-1 ml-8 h-[650px] overflow-y-scroll no-scrollbar flex flex-col gap-y-4 font-[family-name:var(--font-geist-mono)]" >
+          <div className="flex-1 ml-8 pr-4 h-[650px] overflow-y-scroll my-scrollbar flex flex-col gap-y-4 font-[family-name:var(--font-geist-mono)]" >
             <p className="text-4xl  font-bold">Internship Projects</p>
             <p className="text-2xl font-bold">Two Bays App</p>
             <Image

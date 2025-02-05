@@ -96,7 +96,7 @@ export default function About() {
               : linkedin.com/in/yun-keng-leong/
             </a>
           </div>
-          <div className="flex-1 ml-8 h-[650px] overflow-y-scroll no-scrollbar flex flex-col gap-y-4 font-[family-name:var(--font-geist-mono)]" >
+          <div className="flex-1 ml-8 pr-4 h-[650px] overflow-y-scroll my-scrollbar flex flex-col gap-y-4 font-[family-name:var(--font-geist-mono)]" >
             <p className="text-4xl  font-bold ">Introduction</p>
             <p className="text-xl">Hi, I am Troy, a passionate software developer with expertise in creating intuitive and scalable applications. I thrive on problem-solving, continuous learning, and building technology solutions that make an impact.</p>
             
@@ -111,7 +111,7 @@ export default function About() {
             </div>
             
             <p className="text-4xl font-bold mt-10">Work Experiences</p>
-            <p className="text-xl italic opacity-75">Click on them for more details</p>
+            <p className="text-xl italic opacity-65">Click on them for more details</p>
             <div className="flex justify-between">
               <p className="text-xl cursor-pointer" onClick={() => toggleDropdown("regeneration")}>App Developer Intern at Regeneration Projects</p>
               <p className="text-xl ">Jul 2024 - Oct 2024</p>
