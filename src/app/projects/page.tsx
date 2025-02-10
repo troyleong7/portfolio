@@ -56,15 +56,7 @@ export default function Projects() {
             <a className="text-xl font-[family-name:var(--font-geist-mono)]">
               Contacts
             </a>
-            <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
-              <Image
-              src="/phone.svg"
-              alt="Phone icon"
-              width={20}
-              height={20}
-              />
-              : +(61) 426 070 118
-            </a>
+
             <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image    
               src="/mail.svg"
