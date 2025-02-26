@@ -7,9 +7,8 @@ import { useState } from "react";
 export default function Projects() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-      <div className="grid grid-rows-[20px_0.3fr] items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-              <header>
-        {/* Button to toggle menu */}
+      <div className="grid grid-rows-[20px_0.3fr] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <header>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="sm:hidden p-3 absolute top-0 right-0 m-4 z-40"
@@ -40,27 +39,26 @@ export default function Projects() {
             Projects
           </Link>
         </div>
-
-        {/* Header for other content */}
         <div className="row-start-1 hidden sm:flex gap-8 flex-wrap items-center justify-center bg-black p-1 rounded-3xl border-gray-700 border-2">
-          <a className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600">
+        <Link
+            className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
+            href="/"
+          >
             <Image src="/home.svg" alt="Home icon" width={16} height={16} />
             Home
-          </a>
-          <Link
+            </Link>
+            <Link
             className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
             href="/about"
           >
             <Image src="/user.svg" alt="User icon" width={16} height={16} />
             About Me
           </Link>
-          <Link
-            className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
-            href="/projects"
-          >
-            <Image src="/file.svg" alt="File icon" width={16} height={16} />
-            Projects
-          </Link>
+  
+          <a className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600">
+                      <Image src="/file.svg" alt="File icon" width={16} height={16} />
+                      Projects
+                    </a>
         </div>
       </header>
   
