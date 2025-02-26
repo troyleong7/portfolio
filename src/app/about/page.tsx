@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link"; 
 import { useState } from "react";
@@ -6,6 +7,7 @@ import { useState } from "react";
 export default function About() {
 
   const [openDropdown, setOpenDropdown] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleDropdown = (identifier: string) => {
     setOpenDropdown((prev) => (prev === identifier ? "" : identifier));
@@ -14,41 +16,61 @@ export default function About() {
 
     return (
       <div className="grid grid-rows-[20px_0.3fr] items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <header className="row-start-1 flex gap-8 flex-wrap items-center justify-center bg-black p-1 rounded-3xl border-gray-700 border-2 max-w-screen-lg mx-auto">
-          <Link className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
-          href="/">
-            <Image
-              src="/home.svg"
-              alt="Home icon"
-              width={16}
-              height={16}
-            />
+        <header>
+        {/* Button to toggle menu */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="sm:hidden p-3 absolute top-0 right-0 m-4 z-40"
+        >
+          <Image src="/burger.svg" alt="burger" width={24} height={24} />
+        </button>
+
+        <div className={`fixed top-0 right-0 w-full h-full bg-black text-white flex flex-col items-center justify-center z-50 transform transition-transform duration-700 ease-in-out ${
+                menuOpen ? "translate-x-0" : "translate-x-full"
+              }`}>
+
+          {menuOpen && (
+            <div
+              className="fixed inset-0 bg-black z-40"
+              onClick={() => setMenuOpen(false)} 
+            ></div>
+          )}
+          <Link href="/" className="flex gap-2 py-2 text-2xl z-50" onClick={() => setMenuOpen(false)}>
+            <Image src="/home.svg" alt="Home icon" width={16} height={16} />
             Home
           </Link>
-          <a className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600 ">
-            <Image
-              src="/user.svg"
-              alt="User icon"
-              width={16}
-              height={16}
-            />
+          <Link href="/about" className="flex gap-2 py-2 text-2xl z-50" onClick={() => setMenuOpen(false)}>
+            <Image src="/user.svg" alt="User icon" width={16} height={16} />
             About Me
+          </Link>
+          <Link href="/projects" className="flex gap-2 py-2 text-2xl z-50" onClick={() => setMenuOpen(false)}>
+            <Image src="/file.svg" alt="File icon" width={16} height={16} />
+            Projects
+          </Link>
+        </div>
+
+        {/* Header for other content */}
+        <div className="row-start-1 hidden sm:flex gap-8 flex-wrap items-center justify-center bg-black p-1 rounded-3xl border-gray-700 border-2">
+          <a className="flex items-center gap-2 p-2 rounded-3xl bg-gray-600">
+            <Image src="/home.svg" alt="Home icon" width={16} height={16} />
+            Home
           </a>
-  
+          <Link
+            className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
+            href="/about"
+          >
+            <Image src="/user.svg" alt="User icon" width={16} height={16} />
+            About Me
+          </Link>
           <Link
             className="flex items-center gap-2 p-2 rounded-3xl hover:bg-gray-800 transition-all duration-700"
             href="/projects"
           >
-            <Image
-              src="/file.svg"
-              alt="File icon"
-              width={16}
-              height={16}
-            />
-          Projects
-        </Link>
-  
-        </header>
+            <Image src="/file.svg" alt="File icon" width={16} height={16} />
+            Projects
+          </Link>
+        </div>
+      </header>
   
         <main className="flex gap-2 row-start-2 justify-start">
           <div className="flex flex-col items-center gap-5">
