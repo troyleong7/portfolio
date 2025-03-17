@@ -5,7 +5,9 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Projects() {
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
+
     return (
       <div className="grid grid-rows-[20px_0.3fr] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <header>
@@ -63,7 +65,62 @@ export default function Projects() {
       </header>
   
         <main className="flex gap-2 row-start-2 justify-start">
-          <div className="flex flex-col items-center gap-5">
+          <button
+                    onClick={() => setContactOpen(!contactOpen)}
+                    className="sm:hidden p-3 absolute top-0 left-0 m-4 z-40"
+                  >
+                    <Image src="/contact.svg" alt="contact" width={24} height={24} />
+                    </button>
+                    
+                    <div className={`fixed top-0 left-0 w-full h-full bg-black text-white flex flex-col items-center justify-center z-50 transform transition-transform duration-700 ease-in-out ${
+                          contactOpen ? "translate-x-0" : "-translate-x-full"
+                        }`}>
+          
+                    {contactOpen && (
+                      <div
+                        className="fixed inset-0 bg-black z-40"
+                        onClick={() => setContactOpen(false)} 
+                      ></div>
+                    )}
+                    <div className="relative z-50 w-100 p-5 bg-black shadow-lg flex flex-col items-center gap-5">
+                      <div className="w-64 h-64 rounded-full overflow-hidden border-gray-600 border-2">
+                        <Image
+                          className="object-fill scale-150"
+                          src="/linkedin.jpeg"
+                          alt="profile pic"
+                          width={250}  
+                          height={250} 
+                          quality={100} 
+                        />
+                      </div>
+                      <a className="text-xl font-light font-[family-name:var(--font-geist-mono)]">
+                        Yun Keng (Troy) Leong
+                      </a>
+                      <a className="text-xl font-[family-name:var(--font-geist-mono)]">
+                        Contacts
+                      </a>
+                      <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
+                        <Image
+                        src="/mail.svg"
+                        alt="Mail icon"
+                        width={20}
+                        height={20}
+                        />
+                        : troyleong@hotmail.com
+                      </a>
+                      <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
+                        <Image
+                        src="/linkedin.svg"
+                        alt="LinkedIn icon"
+                        width={20}
+                        height={20}
+                        />
+                        : linkedin.com/in/yun-keng-leong/
+                      </a>
+                    </div>
+          </div>
+          
+          <div className="hidden sm:flex flex-col items-center gap-5">
             <div className="row-start-1 w-64 h-64 rounded-full overflow-hidden border-gray-600 border-2">
               <Image
                 className="object-fill scale-150"
