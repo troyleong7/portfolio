@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { ReactTyped } from "react-typed";
 import { useState } from "react";
 
 export default function Home() {
@@ -84,7 +85,15 @@ export default function Home() {
             Yun Keng (Troy) Leong
           </a>
           <a className="text-2xl font-light font-[family-name:var(--font-geist-mono)]">
-            I am a Software/App/Web Developer!
+            I am a {" "}
+            < ReactTyped
+            strings={["Software", "App", "Web"]}
+            typeSpeed={100}
+            backSpeed={150}
+            loop
+            showCursor={false}
+            />{" "}
+            Developer!
           </a>
         </div>
       </main>
