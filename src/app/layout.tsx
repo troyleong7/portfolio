@@ -14,8 +14,22 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Troy's Portfolio",
   description: "",
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/portfolio-logo.png',
+        href: '/portfolio-logo.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/portfolio-logo.png',
+        href: '/portfolio-logo.png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +39,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+        <link
+          rel="icon"
+          href="/portfolio-logo.png"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          href="/portfolio-logo.png"
+          media="(prefers-color-scheme: dark)"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
