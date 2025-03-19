@@ -16,7 +16,7 @@ export default function About() {
 
   const [gradient, setGradient] = useState("linear-gradient(1deg,rgb(40, 50, 50),rgb(0, 0, 0))");
 
-  const handleMouseMove = (e: { clientX: any; clientY: any; currentTarget: any; }) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     const { clientX, clientY, currentTarget } = e;
     const { width, height, left, top } = currentTarget.getBoundingClientRect();
     
