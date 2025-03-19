@@ -123,7 +123,10 @@ export default function Projects() {
                         />
                         : troyleong@hotmail.com
                       </a>
-                      <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
+                      <a href="https://www.linkedin.com/in/yun-keng-leong/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
                         <Image
                         src="/linkedin.svg"
                         alt="LinkedIn icon"
@@ -162,7 +165,10 @@ export default function Projects() {
               />
               : troyleong@hotmail.com
             </a>
-            <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
+            <a href="https://www.linkedin.com/in/yun-keng-leong/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
               src="/linkedin.svg"
               alt="LinkedIn icon"

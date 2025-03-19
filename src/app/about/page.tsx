@@ -132,7 +132,10 @@ export default function About() {
               />
               : troyleong@hotmail.com
             </a>
-            <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
+              <a href="https://www.linkedin.com/in/yun-keng-leong/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
               src="/linkedin.svg"
               alt="LinkedIn icon"
@@ -170,7 +173,10 @@ export default function About() {
               />
               : troyleong@hotmail.com
             </a>
-            <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
+            <a href="https://www.linkedin.com/in/yun-keng-leong/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
               src="/linkedin.svg"
               alt="LinkedIn icon"
@@ -185,54 +191,100 @@ export default function About() {
             <p className="text-xl">Hi, I am Troy, a passionate software developer with expertise in creating intuitive and scalable applications. I thrive on problem-solving, continuous learning, and building technology solutions that make an impact.</p>
             
             <p className="text-4xl font-bold mt-10">Education</p>
+            <Image
+              style={{ borderRadius: "20px" }}
+              src="/unimelb_logo.jpg"
+              alt="unimelb logo"
+              width={200}
+              height={200}
+            />
+            <p className="text-2xl font-bold">The University of Melbourne</p>
             <div className="flex justify-between">
               <p className="text-xl">Master of Information Technology - Computing</p>
-              <p className="text-xl">Jul 2023- Dec 2024</p>
+              <p className="text-xl">Jul 2023 - Dec 2024</p>
             </div>
             <div className="flex justify-between">
               <p className="text-xl">Bachelor of Science - Computing and Software Systems</p>
-              <p className="text-xl">Feb 2020- Jul 2023</p>
+              <p className="text-xl">Feb 2020 - Jul 2023</p>
             </div>
             
             <p className="text-4xl font-bold mt-10">Work Experiences</p>
             <p className="text-xl italic opacity-65">Click on them for more details</p>
-            <div className="flex justify-between">
-              <p className="text-xl cursor-pointer" onClick={() => toggleDropdown("regeneration")}>App Developer Intern at Regeneration Projects</p>
-              <p className="text-xl ">Jul 2024 - Oct 2024</p>
+            <div className="flex justify-between mx-40">
+            <Image
+              style={{ borderRadius: "20px" }}
+              src="/regenproj.png"
+              alt="Regeneration Projects"
+              width={200}
+              height={200}
+              className="cursor-pointer"
+              onClick={() => toggleDropdown("regeneration")}
+              />
+              <Image
+              style={{ borderRadius: "20px" }}
+              src="/aakon.png"
+              alt="Aakonsult"
+              width={200}
+              height={200}
+              className="cursor-pointer"
+              onClick={() => toggleDropdown("aakonsult")}
+              />
+              <Image
+              style={{ borderRadius: "20px" }}
+              src="/bankofchina.jpg"
+              alt="Bank of China"
+              width={200}
+              height={200}
+              className="cursor-pointer"
+              onClick={() => toggleDropdown("bankofchina")}
+            />
             </div>
             {openDropdown === "regeneration" && (
-            <ul className="list-disc ml-8">
-              <li className="text-xl">Led as Scrum Master for development of Two Bays mobile application, responsible for managing all frontend development</li>
-              <li className="text-xl">Facilitated agile ceremonies and coordinated cross-functional teams to track progress and maintain timely delivery of features</li>
-              <li className="text-xl">Developed responsive, user-friendly interfaces in Flutter by translating UI/UX design mockups into interactive components</li>
-              <li className="text-xl">Integrated Dart pages for seamless navigation, optimising performance through code refactoring to ensure smooth transitions</li>
-              <li className="text-xl">Executed rigorous testing and debugging on multiple devices to ensure cross-platform compatibility</li>
-            </ul>
+            <div className="py-4">
+              <p className="text-2xl font-bold mb-4">Regeneration Projects</p>
+              <div className="flex justify-between mb-4">
+                <p className="text-xl ">App Developer Intern</p>
+                <p className="text-xl ">Jul 2024 - Oct 2024</p>
+              </div>
+              <ul className="list-disc ml-8 space-y-2">
+                <li className="text-xl">Led as Scrum Master for development of Two Bays mobile application, responsible for managing all frontend development</li>
+                <li className="text-xl">Facilitated agile ceremonies and coordinated cross-functional teams to track progress and maintain timely delivery of features</li>
+                <li className="text-xl">Developed responsive, user-friendly interfaces in Flutter by translating UI/UX design mockups into interactive components</li>
+                <li className="text-xl">Integrated Dart pages for seamless navigation, optimising performance through code refactoring to ensure smooth transitions</li>
+                <li className="text-xl">Executed rigorous testing and debugging on multiple devices to ensure cross-platform compatibility</li>
+              </ul>
+            </div>
               )}
-            <div className="flex justify-between mt-5">
-              <p className="text-xl cursor-pointer" onClick={() => toggleDropdown("aakonsult")}> Junior Software Developer & UI Design Intern at AAkonsult</p>
-              <p className="text-xl ">Nov 2023- Feb 2024</p>
-            </div>
             {openDropdown === "aakonsult" && (
-            <ul className="list-disc ml-8">
-              <li className="text-xl">Led a team of interns to create 3 presentations on the company&apos; web application, highlighting its functionality and competitor analysis, utilised in live client demonstrations</li>
-              <li className="text-xl">Implemented visually appealing email body templates using HTML and CSS, tailored to align with clients&apos;  branding</li>
-              <li className="text-xl">Conducted comprehensive testing of constructed application, identifying and recommending 2 solutions for improvements</li>
-              <li className="text-xl">Collaborated with senior developers on evaluating 8 clients&apos;  technical enquiries and proposing practical solutions to head developer</li>
-              <li className="text-xl">Partnered with Marketing department to enhance client&apos;s knowledge by updating 10 knowledge base articles</li>
-            </ul>
-            )}
-            <div className="flex justify-between mt-5">
-              <p className="text-xl cursor-pointer" onClick={() => toggleDropdown("bankofchina")}>Data Division Intern at Bank of China</p>
-              <p className="text-xl ">Jan 2022- Feb 2022</p>
+            <div className="py-4">
+              <p className="text-2xl font-bold mb-4">AAkonsult</p>
+              <div className="flex justify-between mb-4">
+                <p className="text-xl "> Junior Software Developer & UI Design Intern</p>
+                <p className="text-xl ">Nov 2023 - Feb 2024</p>
+              </div>
+              <ul className="list-disc ml-8 space-y-2">
+                <li className="text-xl">Led a team of interns to create 3 presentations on the company&apos; web application, highlighting its functionality and competitor analysis, utilised in live client demonstrations</li>
+                <li className="text-xl">Implemented visually appealing email body templates using HTML and CSS, tailored to align with clients&apos;  branding</li>
+                <li className="text-xl">Conducted comprehensive testing of constructed application, identifying and recommending 2 solutions for improvements</li>
+                <li className="text-xl">Collaborated with senior developers on evaluating 8 clients&apos;  technical enquiries and proposing practical solutions to head developer</li>
+                <li className="text-xl">Partnered with Marketing department to enhance client&apos;s knowledge by updating 10 knowledge base articles</li>
+                </ul>
             </div>
+            )}
             {openDropdown === "bankofchina" && (
-            <ul className="list-disc ml-8">
-              <li className="text-xl">Suggested a new initiative in data collection from partnering company and execute preprocessing on Oracle</li>
-              <li className="text-xl">Executed Python code to perform key values extraction from documents, plotting graphs and tables to present results for clients</li>
-              <li className="text-xl">Coordinated with the team to analyse the company&apos;s monthly datasets, identifying trends for marketing and sales strategic decisions using Power BI</li>
-              <li className="text-xl">Managed and compiled customers&apos; data using a Microsoft SQL Server </li>
-            </ul>
+            <div className="py-4">
+              <p className="text-2xl font-bold mb-4">Bank of China</p>
+              <div className="flex justify-between mb-4">
+                <p className="text-xl ">Data Division Intern at Bank of China</p>
+                <p className="text-xl ">Jan 2022 - Feb 2022</p>
+              </div>
+              <ul className="list-disc ml-8 space-y-2">
+                <li className="text-xl">Suggested a new initiative in data collection from partnering company and execute preprocessing on Oracle</li>
+                <li className="text-xl">Executed Python code to perform key values extraction from documents, plotting graphs and tables to present results for clients</li>
+                <li className="text-xl">Coordinated with the team to analyse the company&apos;s monthly datasets, identifying trends for marketing and sales strategic decisions using Power BI</li>
+                <li className="text-xl">Managed and compiled customers&apos; data using a Microsoft SQL Server </li>
+              </ul>
+            </div>
             )}
             <p className="text-4xl font-bold mt-10">Certification & Skills</p>
             <p className="text-xl font-bold">Certification</p>
