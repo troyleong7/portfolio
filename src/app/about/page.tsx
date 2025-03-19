@@ -210,32 +210,32 @@ export default function About() {
             
             <p className="text-4xl font-bold mt-10">Work Experiences</p>
             <p className="text-xl italic opacity-65">Click on them for more details</p>
-            <div className="flex justify-between mx-40">
+            <div className="flex justify-between sm:mx-20 ">
             <Image
               style={{ borderRadius: "20px" }}
               src="/regenproj.png"
               alt="Regeneration Projects"
-              width={200}
-              height={200}
-              className="cursor-pointer"
+              width={80}
+              height={80}
+              className="cursor-pointer  sm:w-48 sm:h-48"
               onClick={() => toggleDropdown("regeneration")}
               />
               <Image
               style={{ borderRadius: "20px" }}
               src="/aakon.png"
               alt="Aakonsult"
-              width={200}
-              height={200}
-              className="cursor-pointer"
+              width={80}
+              height={80}
+              className="cursor-pointer  sm:w-48 sm:h-48 "
               onClick={() => toggleDropdown("aakonsult")}
               />
               <Image
               style={{ borderRadius: "20px" }}
               src="/bankofchina.jpg"
               alt="Bank of China"
-              width={200}
-              height={200}
-              className="cursor-pointer"
+              width={80}
+              height={80}
+              className="cursor-pointer sm:w-48 sm:h-48 "
               onClick={() => toggleDropdown("bankofchina")}
             />
             </div>
