@@ -8,8 +8,23 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const [gradient, setGradient] = useState("linear-gradient(0deg,rgb(40, 50, 50),rgb(0, 0, 0))");
+
+  const handleMouseMove = (e: { clientX: any; clientY: any; currentTarget: any; }) => {
+    const { clientX, clientY, currentTarget } = e;
+    const { width, height, left, top } = currentTarget.getBoundingClientRect();
+    
+    const xPercent = ((clientX - left) / width) * 100;
+    const yPercent = ((clientY - top) / height) * 100;
+    
+    // Generate a dynamic gradient based on cursor position
+    setGradient(`radial-gradient(circle at ${xPercent}% ${yPercent}%,rgba(40, 50, 50, 0.7), rgb(0, 0, 0)`);
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
+    style={{ background: gradient }}
+        onMouseMove={handleMouseMove}>
       <header>
         {/* Button to toggle menu */}
         <button
@@ -66,7 +81,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex flex-col sm:flex-row-reverse gap-8 row-start-2 items-center">
+      <main className="flex flex-col sm:flex-row-reverse gap-8 row-start-2 items-center p-12 border-2 border-gray-300 rounded-3xl">
         <div className="w-64 h-64 rounded-full overflow-hidden border-gray-600 border-2 mb-8 sm:mb-0">
           <Image
             className="object-fill scale-150"

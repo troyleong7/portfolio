@@ -8,8 +8,23 @@ export default function Projects() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
 
+  const [gradient, setGradient] = useState("linear-gradient(1deg,rgb(40, 50, 50),rgb(0, 0, 0))");
+
+  const handleMouseMove = (e: { clientX: any; clientY: any; currentTarget: any; }) => {
+    const { clientX, clientY, currentTarget } = e;
+    const { width, height, left, top } = currentTarget.getBoundingClientRect();
+    
+    const xPercent = ((clientX - left) / width) * 100;
+    const yPercent = ((clientY - top) / height) * 100;
+    
+    // Generate a dynamic gradient based on cursor position
+    setGradient(`radial-gradient(circle at ${xPercent}% ${yPercent}%,rgb(40, 50, 50, 0.7), rgb(0, 0, 0)`);
+  };
+
     return (
-      <div className="grid grid-rows-[20px_0.3fr] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <div className="grid grid-rows-[20px_0.3fr] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
+      style={{ background: gradient }}
+      onMouseMove={handleMouseMove}>
         <header>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
