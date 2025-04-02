@@ -123,7 +123,8 @@ export default function About() {
             <a className="text-xl font-[family-name:var(--font-geist-mono)]">
               Contacts
             </a>
-            <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
+              <a href="mailto:troyleong@hotmail.com"
+                className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
               src="/mail.svg"
               alt="Mail icon"
@@ -164,7 +165,8 @@ export default function About() {
             <a className="text-xl font-[family-name:var(--font-geist-mono)]">
               Contacts
             </a>
-            <a className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
+            <a href="mailto:troyleong@hotmail.com"
+              className=" flex text-xl font-light font-[family-name:var(--font-geist-mono)]">
               <Image
               src="/mail.svg"
               alt="Mail icon"
