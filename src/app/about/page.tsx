@@ -40,7 +40,7 @@ export default function About() {
           <Image src="/burger.svg" alt="burger" width={24} height={24} />
         </button>
 
-        <div className={`fixed top-0 right-0 w-full h-full bg-black text-white flex flex-col items-center justify-center z-50 transform transition-transform duration-700 ease-in-out ${
+        <div className={`sm:hidden fixed top-0 right-0 w-full h-full bg-black text-white flex flex-col items-center justify-center z-50 transform transition-transform duration-700 ease-in-out ${
                 menuOpen ? "translate-x-0" : "translate-x-full"
               }`}>
 
@@ -240,13 +240,13 @@ export default function About() {
             />
             </div>
             {openDropdown === "regeneration" && (
-            <div className="py-4">
+            <div className="py-4 animate-line">
               <p className="text-2xl font-bold mb-4">Regeneration Projects</p>
               <div className="flex justify-between mb-4">
                 <p className="text-xl ">App Developer Intern</p>
                 <p className="text-xl ">Jul 2024 - Oct 2024</p>
               </div>
-              <ul className="list-disc ml-8 space-y-2">
+              <ul className="list-disc ml-8 space-y-2 ">
                 <li className="text-xl">Led as Scrum Master for development of Two Bays mobile application, responsible for managing all frontend development</li>
                 <li className="text-xl">Facilitated agile ceremonies and coordinated cross-functional teams to track progress and maintain timely delivery of features</li>
                 <li className="text-xl">Developed responsive, user-friendly interfaces in Flutter by translating UI/UX design mockups into interactive components</li>
@@ -256,7 +256,7 @@ export default function About() {
             </div>
               )}
             {openDropdown === "aakonsult" && (
-            <div className="py-4">
+            <div className="py-4 animate-line">
               <p className="text-2xl font-bold mb-4">AAkonsult</p>
               <div className="flex justify-between mb-4">
                 <p className="text-xl "> Junior Software Developer & UI Design Intern</p>
@@ -272,7 +272,7 @@ export default function About() {
             </div>
             )}
             {openDropdown === "bankofchina" && (
-            <div className="py-4">
+            <div className="py-4 animate-line">
               <p className="text-2xl font-bold mb-4">Bank of China</p>
               <div className="flex justify-between mb-4">
                 <p className="text-xl ">Data Division Intern at Bank of China</p>

@@ -33,7 +33,7 @@ export default function Projects() {
           <Image src="/burger.svg" alt="burger" width={24} height={24} />
         </button>
 
-        <div className={`fixed top-0 right-0 w-full h-full bg-black text-white flex flex-col items-center justify-center z-50 transform transition-transform duration-700 ease-in-out ${
+        <div className={`sm:hidden fixed top-0 right-0 w-full h-full bg-black text-white flex flex-col items-center justify-center z-50 transform transition-transform duration-700 ease-in-out ${
                 menuOpen ? "translate-x-0" : "translate-x-full"
               }`}>
 
