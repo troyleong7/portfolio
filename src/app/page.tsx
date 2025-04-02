@@ -81,7 +81,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex flex-col sm:flex-row-reverse gap-8 row-start-2 items-center p-12 border-2 border-gray-300 rounded-3xl">
+      <main className="flex flex-col sm:flex-row-reverse gap-8 row-start-2 items-center sm:p-12 p-7 border-2 border-gray-300 rounded-3xl">
         <div className="w-64 h-64 rounded-full overflow-hidden border-gray-600 border-2 mb-8 sm:mb-0">
           <Image
             className="object-fill scale-150"
