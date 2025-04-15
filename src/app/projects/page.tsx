@@ -190,6 +190,29 @@ export default function Projects() {
               width={200}
               height={200}
             />
+            <div className="flex items-center gap-20">
+              <a href="https://apps.apple.com/au/app/two-bays/id6737430439" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <Image
+                  style={{ borderRadius: "20px", objectFit: "contain" }}
+                  src="/appstore.png"
+                  alt="App Store"
+                  width={70}
+                  height={70}
+                />
+                <p className="text-xl text-gray-500 italic ml-2">Available on App Store</p>
+              </a>
+
+              <a href="https://play.google.com/store/apps/details?id=com.regenerationProjects.twobaysapp&hl=en-US" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <Image
+                  style={{ borderRadius: "20px", objectFit: "contain" }}
+                  src="/googleplay.png"
+                  alt="google play store"
+                  width={70}
+                  height={70}
+                />
+                <p className="text-xl text-gray-500 italic ml-2">Available on Google Playstore</p>
+              </a>
+            </div>
             
             <p className="text-xl"> Australia&apos;s education system is failing to transform eco-anxiety into action, and it is affecting young people&apos;s wellbeing, engagement, productivity, social connections, and overall life progression. The Two Bays App will equip young people with the ecological literacy and leadership skills they need for life through digital learning journeys that explore local urban ecosystems and waterways. For this project, I am fortunate enough to be selected as the Scrum Master. My responsibilities are:</p>
             <ul className="list-disc ml-8">
@@ -198,6 +221,44 @@ export default function Projects() {
               <li className="text-xl">Ensuring that all team members share common goals and a unified vision, while proactively solving any obstacles the team faces</li>
               <li className="text-xl">Conducted comprehensive frontend testing and debugging across multiple devices to ensure a seamless user experience and reliable cross-platform compatibility.</li>
             </ul>
+
+            <p className="text-4xl mt-10 font-bold">Personal Projects</p>
+            <p className="text-2xl font-bold">My Portfolio</p>
+            <Image
+              style={{ borderRadius: "20px" }}
+              src="/portfolio-logo.png"
+              alt="portfolio"
+              width={200}
+              height={200}
+            />
+            <a href="https://github.com/troyleong7/portfolio" target="_blank" rel="noopener noreferrer">
+              <p className="text-xl text-gray-500 italic">Click here to GitHub repository</p>
+            </a>
+            <p className="text-xl"> I built this website as a personal space to document my journey as a developer — a place where I can share my projects, write about what I'm learning, and track how I grow over time. It serves as both a creative outlet and a professional portfolio to showcase my skills and experiences. About this portfolio website:</p>
+            <ul className="list-disc ml-8">
+              <li className="text-xl">Designed and built user interfaces using TypeScript, Next.js, React, Tailwind CSS, and HTML</li>
+              <li className="text-xl">Implemented responsive design to ensure optimal viewing experience across different devices (Phone and Computer)</li>
+              <li className="text-xl">Deployed the site with Vercel for fast, seamless CI/CD and custom domain integration</li>
+            </ul>
+
+            <p className="text-2xl mt-5 font-bold">MyLevelQuest Project (In Progress)</p>
+            <Image
+              style={{ borderRadius: "20px" }}
+              src="/MLQ-logo.png"
+              alt="my level quest"
+              width={200}
+              height={200}
+            />
+            <a href="https://github.com/troyleong7/MyLevelQuest" target="_blank" rel="noopener noreferrer">
+              <p className="text-xl text-gray-500 italic">Click here to GitHub repository</p>
+            </a>
+            <p className="text-xl"> Noticing the growing demand for .NET in the job market, I became curious and decided to explore the framework by building something practical and fun. That led to the creation of MyLevelQuest — a full-stack task management web application designed to turn daily tasks into quests. By integrating game-like elements, I turned this self-learning journey into a more engaging experience, helping me stay motivated and deepen my understanding of full-stack development. About this project:</p>
+            <ul className="list-disc ml-8">
+              <li className="text-xl">Built a full-stack web application using .NET Core Web API for the backend and PostgreSQL for database, implementing RESTful APIs for user authentication and task management</li>
+              <li className="text-xl">Developed a responsive and interactive frontend with React, Next.js, Tailwind CSS, and TypeScript, creating a smooth UI for managing and completing tasks</li>
+              <li className="text-xl">Integrated user authentication with email and password login using JWT tokens, allowing tasks to be securely linked to individual users</li>
+            </ul>
+
             <p className="text-4xl  font-bold mt-10">University Projects</p>
             <p className="text-2xl font-bold">Unirec Group Project</p>
             <Image
@@ -207,6 +268,9 @@ export default function Projects() {
               width={200}
               height={200}
             />
+            <a href="https://github.com/BrandonWidjaja/IT-Project" target="_blank" rel="noopener noreferrer">
+              <p className="text-xl text-gray-500 italic">Click here to GitHub repository</p>
+            </a>
             <p className="text-xl">Unirec is a web-based database that records all the buildings at the University of Melbourne. Its main purpose is to track these buildings and allow students and alumni to rate their features, highlight strengths, and offer recommendations. The goal is to enhance the university experience by creating a community where students can share their thoughts about campus buildings and facilities. My role is to:</p>
             <ul className="list-disc ml-8">
               <li className="text-xl">Serve as a frontend developer for Unirec, a web database application for storing university building details and community ratings</li>
@@ -221,6 +285,9 @@ export default function Projects() {
               width={200}
               height={200}
             />
+            <a href="https://github.com/jiayao3/SensorShip" target="_blank" rel="noopener noreferrer">
+              <p className="text-xl text-gray-500 italic">Click here to GitHub repository</p>
+            </a>
             <p className="text-xl">SensorShip is an Android space shooter game that can be played using three different sensors on your phone. The game offers three playstyles: face movement with voice (using the camera and microphone), touchscreen (using the screen sensor), and tilting your phone (using the gyroscope). Each time the ship is hit by an alien, part of the screen becomes censored—hence the name SensorShip. My role is to:</p>
             <ul className="list-disc ml-8">
               <li className="text-xl">Create the base game within Android Studio using Java and libGDX package</li>
@@ -235,6 +302,9 @@ export default function Projects() {
             </ul>
 
             <p className="text-2xl font-bold mt-5">Generic Real Estate Consulting Project</p>
+            <a href="https://github.com/MAST30034-Applied-Data-Science/generic-real-estate-consulting-project-group-2" target="_blank" rel="noopener noreferrer">
+              <p className="text-xl text-gray-500 italic">Click here to GitHub repository</p>
+            </a>
             <p className="text-xl">The rental prices of residential properties vary across Victoria. The team must investigate this issue by identifying the internal and external factors influencing these differences. As a result, the team should provide insights into areas with higher livability and affordability, as well as predictions on potential rental price increases. My role is to:</p>
             <ul className="list-disc ml-8">
               <li className="text-xl">Carried out research and data scraping to identify factors influencing rental prices for homes and apartments across Victoria</li>
