@@ -290,8 +290,11 @@ export default function About() {
             )}
             <p className="text-4xl font-bold mt-10">Certification & Skills</p>
             <p className="text-xl font-bold">Certification</p>
+            <p className="text-l italic opacity-65">Click on them for verification</p>
             <ul className="list-disc ml-8">
-              <li className="text-xl">AWS Certified Cloud Practitioner</li>
+              <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/f4e5f15f7d2e415986b075b5bffae9b5" target="_blank" rel="noopener noreferrer">
+                <li className="text-xl">AWS Certified Cloud Practitioner</li>
+              </a>
             </ul>
             <p className="text-xl font-bold">Programming Languages</p>
             <ul className="list-disc ml-8 columns-2">

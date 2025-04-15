@@ -234,7 +234,7 @@ export default function Projects() {
             <a href="https://github.com/troyleong7/portfolio" target="_blank" rel="noopener noreferrer">
               <p className="text-xl text-gray-500 italic">Click here to GitHub repository</p>
             </a>
-            <p className="text-xl"> I built this website as a personal space to document my journey as a developer — a place where I can share my projects, write about what I'm learning, and track how I grow over time. It serves as both a creative outlet and a professional portfolio to showcase my skills and experiences. About this portfolio website:</p>
+            <p className="text-xl"> I built this website as a personal space to document my journey as a developer — a place where I can share my projects, write about what I am learning, and track how I grow over time. It serves as both a creative outlet and a professional portfolio to showcase my skills and experiences. About this portfolio website:</p>
             <ul className="list-disc ml-8">
               <li className="text-xl">Designed and built user interfaces using TypeScript, Next.js, React, Tailwind CSS, and HTML</li>
               <li className="text-xl">Implemented responsive design to ensure optimal viewing experience across different devices (Phone and Computer)</li>
